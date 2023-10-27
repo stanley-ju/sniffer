@@ -106,6 +106,11 @@ class Ui_sniffer(object):
 
         self.gridLayout_5.addLayout(self.gridLayout_3, 3, 0, 1, 3)
 
+        self.filter_button = QPushButton(self.centralwidget)
+        self.filter_button.setObjectName(u"filter_button")
+
+        self.gridLayout_5.addWidget(self.filter_button, 1, 2, 1, 1)
+
         sniffer.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(sniffer)
         self.menubar.setObjectName(u"menubar")
@@ -147,9 +152,10 @@ class Ui_sniffer(object):
 "</style></head><body style=\" font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
         self.bpf_filter.setText("")
-        self.bpf_filter.setPlaceholderText(QCoreApplication.translate("sniffer", u"BDF filter", None))
+        self.bpf_filter.setPlaceholderText(QCoreApplication.translate("sniffer", u"BPF filter", None))
         self.start_button.setText(QCoreApplication.translate("sniffer", u"Start Capture", None))
         ___qtreewidgetitem = self.packet_detail.headerItem()
         ___qtreewidgetitem.setText(0, QCoreApplication.translate("sniffer", u"Packet Detail Info", None));
+        self.filter_button.setText(QCoreApplication.translate("sniffer", u"Filtering", None))
     # retranslateUi
 

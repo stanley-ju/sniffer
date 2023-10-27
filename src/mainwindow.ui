@@ -112,7 +112,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        <string/>
       </property>
       <property name="placeholderText">
-       <string>BDF filter</string>
+       <string>BPF filter</string>
       </property>
      </widget>
     </item>
@@ -135,6 +135,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
        </widget>
       </item>
      </layout>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="filter_button">
+      <property name="text">
+       <string>Filtering</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
